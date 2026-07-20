@@ -1,7 +1,4 @@
-# speedtest-c
-
-![build](https://github.com/nojusdau/Speedtest_project/actions/workflows/build.yml/badge.svg)
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+# Speedtest_project
 
 Konsoline C programa interneto rysio parsiuntimo / issiuntimo greiciui
 ismatuoti, panasiai kaip `speedtest-cli`. Programa naudoja **Speedtest
