@@ -13,7 +13,7 @@ kiekviena veiksma atskirai arba pilna automatizuota testa.
 
 ```bash
 git clone https://github.com/nojusdau/Speedtest_project.git
-cd <REPO>
+cd Speedtest_project
 ./install.sh          # patikrina/idiegia priklausomybes ir paruosia programa darbui
 ./bin/speedtest --all  # paleidzia pilna automatizuota testa
 ```
@@ -138,17 +138,17 @@ testus be pilno `--all`):
 
 ## Klaidu valdymas
 
-Programa korektiskai apdoroja ir prasmingai praneša apie:
+Programa korektiskai apdoroja ir prasmingai pranesa apie:
 
 * trukstamus / neteisingus komandines eilutes parametrus;
 * neegzistuojanti ar netinkamo formato serveriu saraso JSON faila;
 * nepasiekiama vietoves API arba netinkama API atsakyma;
 * neaktyvius / nepasiekiamus speedtest serverius (tiek ieskant
   geriausio serverio, tiek atliekant parsisiuntimo/issiuntimo testus) -
-  tokiu atveju programa nenutrūksta avariškai, o grąžina klaidos
-  pranešimą ir tęsia likusius užduotus veiksmus.
+  tokiu atveju programa nenutruksta, o grazina klaidos
+  pranesima ir tesia likusius uzduotus veiksmus.
 
-Klaidos praneszamos i `stderr`, o programa baigia darba su ne-nuliniu
+Klaidos pranesamos i `stderr`, o programa baigia darba su ne-nuliniu
 isejimo kodu (`exit code 1`), jei bent vienas veiksmas nepavyko.
 
 ## Projekto struktura
@@ -160,7 +160,7 @@ speedtest_project/
 ├── speedtest_server_list.json
 └── src/
     ├── main.c           - CLI apdorojimas ir veiksmu orkestravimas
-    ├── common.h         - bendros struktūros ir konstantos
+    ├── common.h         - bendros strukturos ir konstantos
     ├── http_utils.c/h   - libcurl pagalbines funkcijos (write/progress callback)
     ├── location.c/h     - vietoves nustatymas per IP-API
     ├── servers.c/h      - serveriu saraso ikelimas, filtravimas, latency testas
