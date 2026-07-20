@@ -1,0 +1,48 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled executable files
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+
+# Debug files
+*.dSYM/
+*.su
+*.gch
+*.PCH
+
+# Dependency files
+*.d
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+*.gcov
+*.gcda
+*.gcno
+coverage/
+
+# Libraries
+*.a
+*.so
+*.dylib
+
+# CMake build
+CMakeCache.txt
+CMakeFiles/
+Makefile.cmake
+cmake_install.cmake
